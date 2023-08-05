@@ -142,67 +142,7 @@
             </div>
         </div>
 
- 
 
-        <!-- ##### Results #####-->
-
-     <div class="row">     
-        <div class="col-md-8 col-md-offset-2">
-            <h3>
-                Inspiration
-            </h3>
-            <p class="text-justify">
-                While the POT framework is effective, its fixed octree structure can limit its adaptability to varying scene complexities.
-                 We introduce hierarchical feature fusion with sampling/pruning to overcome this limitation, as illustrated by the dashed box below. 
-                 Varying colors on the grid represent the training signals. 
-                 Internal nodes are denoted in <span style="color:orange">orange</span>, 
-                 while leaf nodes in <span style="color:green">orange</span>. Pruning occurs in regions of weak signal, 
-                 where cached properties in leaf nodes are aggregated, and the averaged value is propagated to internal nodes, 
-                 which become the new leaves. Complementary sampling takes place in the red regions. 
-                 The resulting sampling distribution exhibits significant improvement, as highlighted by the red boxes in our final octree results.
-            </p>
-            <img src="./image/teaser.png" class="img-responsive" alt="vis_res"  class="center" >
-      </div>           
-     <div class="col-md-8 col-md-offset-2">
-          <h3>
-              Comparison on octree representations
-          </h3>
-          <p class="text-justify">
-            DOT shows the more compact structure of DOT, 
-            resulting in fewer ray intersections, explaining our significant rendering speed boost.
-
-          </p>
-		  <img src="./image/dot_cp.png" class="img-responsive" alt="vis_res" class="center"><br>
-    </div>   
-    <div class="col-md-8 col-md-offset-2">
-        <h3>
-            Comparison on visual quality and memory consumption
-        </h3>
-        <p class="text-justify">
-            DOT provides more details in complex regions, such as sharper reflections on windows and more evident edges on fences. 
-
-        </p>
-        <img src="./image/dot_cp2.png" class="img-responsive" alt="vis_res" class="center"><br>
-    </div>     
-    </div>
-
-
-		      
-    	<div class="row">      
-     <div class="col-md-8 col-md-offset-2">
-          <h3>
-              Demo 
-          </h3>   
-    </div>   
-      
-    <div class="col-md-8 col-md-offset-2">
-
-            <video width="800"  controls >
-                <source src="./video/dot.mp4" type="video/mp4">
-              Your browser does not support HTML video.
-            </video>   
-    </div>          
-      </div>
    <!-- ##### BibTex #####-->
         <hr>
         <div class="row">
@@ -214,8 +154,8 @@
                 <div class="row align-items-center">
                     <div class="col py-3">
                         <pre class="border">             
-@inproceedings{Bai2023DOT,
-  title={Dynamic PlenOctree for Adaptive Sampling Refinement in Explicit NeRF},
+@inproceedings{Zheng2023DATR,
+  title={Look at the Neighbor: Distortion-aware Unsupervised Domain Adaptation for Panoramic Semantic Segmentati},
   author={Haotian Bai, Yiqi Lin, Yize Chen, Lin Wang},
   booktitle = {IEEE International Conference on Computer Vision (ICCV)},
   year={2023}
